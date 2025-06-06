@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serviços de Drywall Profissionais</title>
+    <link rel="shortcut icon" href="./img/logo-sem-fundo.png" type="image/x-icon">
+    <meta
+      name="description"
+      content="Especialistas em instalação e manutenção de Drywall. Qualidade, agilidade e bom preço. Solicite um orçamento!"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Analytics Fictício -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXXXXX");
+    </script>
+
+    <!-- Open Graph (opcional para redes sociais) -->
+    <meta property="og:title" content="Serviços de Drywall Profissionais" />
+    <meta
+      property="og:description"
+      content="Qualidade, agilidade e bom preço. Solicite um orçamento!"
+    />
+    <meta property="og:type" content="website" />
+    <!-- <meta property="og:url" content="https://www.seusiteficticio.com" /> -->
+    <meta
+      property="og:image"
+      content="https://www.seusiteficticio.com/imagem.jpg"
+    />
+
+    <style></style>
+  </head>
+
+  <body>
+    <header>
+      <img src="./img/Logo.webp" alt="ConstruWall Logo" id="logo" />
+      <h1>Serviços de Drywall</h1>
+      <p>Transforme seus ambientes com rapidez e qualidade</p>
+    </header>
+
+    <section class="sobre">
+      <h2 id="sobre__titulo">Sobre Nós</h2>
+      <div class="sobre__imagem__container">
+        <div class="sobre__hero">
+          <img src="./img/hero.webp" alt="ConstruWall" id="sobre__imagem" />
+          <img src="./img/hero2.png" alt="ConstruWall" id="sobre__imagem" />
+          <img src="./img/hero3.png" alt="ConstruWall" id="sobre__imagem" />
+          <img src="./img/hero4.png" alt="ConstruWall" id="sobre__imagem" />
+        </div>
+        <p id="sobre__texto">
+          Somos especialistas em projetos de Drywall, oferecendo soluções
+          rápidas, limpas e com ótimo custo-benefício para residências e
+          comércios.
+          <button class="btn__cta">
+          Solicitar um orçamento
+          </button>
+        </p>
+    </div>
+    </section>
+
+    <section class="beneficios">
+      <h2 id="beneficios__titulo">Por que escolher nosso serviço?</h2>
+      <ul>
+        <li>
+          <img
+            src="./img/acabamento64.ico"
+            alt="Acabamento"
+            id="beneficios__icone"
+          />
+          Acabamento profissional
+        </li>
+        <li>
+          <img
+            src="./img/agilidade64.ico"
+            alt="Qualidade"
+            id="beneficios__icone"
+          />
+          Agilidade na execução
+        </li>
+        <li>
+          <img
+            src="./img/preco-justo64.ico"
+            alt="Preço justo"
+            id="beneficios__icone"
+          />
+          Preço justo
+        </li>
+        <li>
+          <img
+            src="./img/team64.ico"
+            alt="Equipe experiente"
+            id="beneficios__icone"
+          />
+          Equipe experiente
+        </li>
+      </ul>
+    </section>
+
+    <section class="cta">
+      <h2>Solicite seu orçamento agora!</h2>
+      <p>Envie seu pedido para nosso e-mail e receba um retorno em menos de 24h.</p>
+      <button class="btn__cta">
+        Solicitar um orçamento
+      </button>
+    </section>
+
+    <footer>
+      &copy; 2025 <a href="https://github.com/M4R0C4" target="https://github.com/M4R0C4">M4R0C4</a> Serviços Fictícios. Todos os direitos reservados.
+    </footer>
+<script>
+  document.getElementById("btn__cta").addEventListener("click", function() {
+    const email = "mariana.rodrigues.or@gmail.com";
+    const subject = "Orçamento";
+    const body = "Quero um orçamento!";
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    window.location.href = mailtoLink;
+  });
+</script>
+  </body>
+</html>
