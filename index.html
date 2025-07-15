@@ -116,18 +116,44 @@
       </button>
     </section>
 
+      <!-- Modal Orçamento-->
+    <div class="modal--container">
+        <div class="modal">
+          <form action="" class="solicitar-orcamento">
+            <div class="cabecalho-modal">
+              <h3 class="titulo-modal">
+                  Preencha os campos para solicitar o orçamento
+              </h3>
+              <img src="./img/cross-2_90852.svg" class="fechar-orcamento" alt="Botao fechar">
+            </div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required />
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required />
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required />
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Descreva o tipo  de obra que deseja realizar"
+                    required></textarea>
+                <button type="submit" class="modal-enviar">Enviar</button>
+            </form>
+        </div>
+    </div>
+<!-- Modal Sucesso-->
+
+<div class="modal--sucesso sucesso">
+  <div class="modal">
+    <h3 class="titulo-modal">
+      Seu orçamento foi enviado com sucesso!
+    </h3>
+    <button type="submit" class="fechar"> <img src="./img/cross-2_90852.svg" alt="botão fechar"> </button>
+  </div>
+</div>
+
     <footer>
+      <a href="./solicita-orcamento.html">TEST</a>
       &copy; 2025 <a href="https://github.com/M4R0C4" target="https://github.com/M4R0C4">M4R0C4</a> Serviços Fictícios. Todos os direitos reservados.
     </footer>
-<script>
-  document.getElementById("btn__cta").addEventListener("click", function() {
-    const email = "mariana.rodrigues.or@gmail.com";
-    const subject = "Orçamento";
-    const body = "Quero um orçamento!";
-    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
-    window.location.href = mailtoLink;
-  });
-</script>
+<script type="module" src="./scripts/main.js"></script>
   </body>
 </html>
